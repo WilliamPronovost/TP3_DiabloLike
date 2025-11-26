@@ -6,8 +6,6 @@ public class PlayerControls : MonoBehaviour
 {
     private NavMeshAgent m_playerAgent;
 
-    [SerializeField] private float m_playerSpeedWhenAiming;
-
     [SerializeField] private InputActionAsset m_inputActions;
     private InputAction m_moveAction;
     private InputAction m_shootAction;
@@ -44,7 +42,11 @@ public class PlayerControls : MonoBehaviour
     {
         if (m_shootAction.WasPressedThisFrame())
         {
-            SpawnBullet(); 
+            Ray rayFromCamera = Camera.main.ScreenPointToRay(Mouse.current.position.ReadValue());
+            if (Physics.Raycast(rayFromCamera, out RaycastHit hitInfo))
+            {
+                SpawnBullet();
+            }
         }
     }
     private Transform SpawnBullet()

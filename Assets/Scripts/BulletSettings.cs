@@ -12,6 +12,6 @@ public class BulletSettings : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(m_bulletSpeed, 0, 0);
+        transform.Translate(0, 0, m_bulletSpeed * Time.deltaTime);
     }
 }
