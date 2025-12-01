@@ -1,6 +1,8 @@
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PlayerControls : MonoBehaviour
 {
@@ -12,6 +14,11 @@ public class PlayerControls : MonoBehaviour
 
     [SerializeField] private GameObject m_bulletPrefab;
     [SerializeField] private Transform m_bulletCollection;
+
+    [SerializeField] private RawImage m_deathScreen;
+    private float m_deathTimer;
+    private float m_deathDelay = 1.0f;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -45,14 +52,28 @@ public class PlayerControls : MonoBehaviour
             Ray rayFromCamera = Camera.main.ScreenPointToRay(Mouse.current.position.ReadValue());
             if (Physics.Raycast(rayFromCamera, out RaycastHit hitInfo))
             {
-                SpawnBullet();
+                Vector3 direction = (hitInfo.point - transform.position).normalized;
+                direction.y = 0;
+                Quaternion rotation = Quaternion.LookRotation(direction);
+                GameObject newBullet = Instantiate(m_bulletPrefab, transform.position, rotation, m_bulletCollection);
             }
         }
     }
-    private Transform SpawnBullet()
+    public void PlayerDeath()
     {
-        GameObject newBullet = Instantiate(m_bulletPrefab, transform.position, Quaternion.identity, m_bulletCollection);
-        return newBullet.transform;
+        m_deathTimer += Time.deltaTime;
+        if(m_deathTimer < m_deathDelay)
+        {
+            float timer = m_deathTimer / m_deathDelay;
+            float alpha = Mathf.Lerp(0, 1, timer);
+            Color color = m_deathScreen.color;
+            color.a = alpha;
+            m_deathScreen.color = color;
+        }
+        else
+        {
+            SceneManager.LoadScene(0);
+        }
     }
-
+       
 }

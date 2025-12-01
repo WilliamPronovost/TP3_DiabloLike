@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "D:\\TP3_DiabloLike\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4E43A093-A45C-D64C-A3A6-682B77762B3C}|Assembly-CSharp.csproj|D:\\TP3_DiabloLike\\assets\\scripts\\playercontrols.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4E43A093-A45C-D64C-A3A6-682B77762B3C}|Assembly-CSharp.csproj|d:\\tp3_diablolike\\assets\\scripts\\playercontrols.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4E43A093-A45C-D64C-A3A6-682B77762B3C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playercontrols.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4E43A093-A45C-D64C-A3A6-682B77762B3C}|Assembly-CSharp.csproj|d:\\tp3_diablolike\\assets\\scripts\\bulletsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4E43A093-A45C-D64C-A3A6-682B77762B3C}|Assembly-CSharp.csproj|D:\\TP3_DiabloLike\\assets\\scripts\\bulletsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4E43A093-A45C-D64C-A3A6-682B77762B3C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\bulletsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E43A093-A45C-D64C-A3A6-682B77762B3C}|Assembly-CSharp.csproj|D:\\TP3_DiabloLike\\assets\\scripts\\enemysettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E43A093-A45C-D64C-A3A6-682B77762B3C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemysettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,8 +22,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EnemySettings.cs",
+              "DocumentMoniker": "D:\\TP3_DiabloLike\\Assets\\Scripts\\EnemySettings.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\EnemySettings.cs",
+              "ToolTip": "D:\\TP3_DiabloLike\\Assets\\Scripts\\EnemySettings.cs",
+              "RelativeToolTip": "Assets\\Scripts\\EnemySettings.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB0AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T13:29:33.065Z"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -28,10 +44,9 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\BulletSettings.cs",
               "ToolTip": "D:\\TP3_DiabloLike\\Assets\\Scripts\\BulletSettings.cs",
               "RelativeToolTip": "Assets\\Scripts\\BulletSettings.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-24T15:22:31.287Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-24T15:22:31.287Z"
             },
             {
               "$type": "Document",
@@ -41,7 +56,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerControls.cs",
               "ToolTip": "D:\\TP3_DiabloLike\\Assets\\Scripts\\PlayerControls.cs",
               "RelativeToolTip": "Assets\\Scripts\\PlayerControls.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAowCoAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAABwAAAAAAAAAAAAgwBkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-24T14:37:25.366Z",
               "EditorCaption": ""

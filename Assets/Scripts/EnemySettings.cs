@@ -22,12 +22,13 @@ public class EnemySettings : MonoBehaviour
         BulletSettings bullet = collision.GetComponent<BulletSettings>();
         if (bullet != null)
         {
-            Destroy(gameObject);
+        Destroy(gameObject);
         }
         PlayerControls player = collision.GetComponent<PlayerControls>();
         if (player != null)
         {
-            Destroy(player);
-        }
+         player.PlayerDeath();
+        }   
     }
+
 }
