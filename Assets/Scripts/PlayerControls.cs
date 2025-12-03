@@ -8,13 +8,16 @@ public class PlayerControls : MonoBehaviour
 {
     private NavMeshAgent m_playerAgent;
 
+    [Header("Player Actions")]
     [SerializeField] private InputActionAsset m_inputActions;
     private InputAction m_moveAction;
     private InputAction m_shootAction;
 
+    [Header("Player Weapon")]
     [SerializeField] private GameObject m_bulletPrefab;
     [SerializeField] private Transform m_bulletCollection;
 
+    [Header("Player Death")]
     [SerializeField] private RawImage m_deathScreen;
     private float m_deathTimer;
     private float m_deathDelay = 1.0f;
