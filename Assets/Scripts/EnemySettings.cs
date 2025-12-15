@@ -17,18 +17,17 @@ public class EnemySettings : MonoBehaviour
     {
         m_enemyAgent.SetDestination(m_player.position);
     }
-    private void OnTriggerEnter(Collider collision)
+    private void OnCollisionEnter(Collision collision)
     {
-        BulletSettings bullet = collision.GetComponent<BulletSettings>();
-        if (bullet != null)
-        {
-        Destroy(gameObject);
-        }
-        PlayerControls player = collision.GetComponent<PlayerControls>();
+        PlayerControls player = collision.collider.GetComponent<PlayerControls>();
         if (player != null)
         {
-         player.PlayerDeath();
+            player.PlayerDeath();
         }   
+    }
+    public void EnemyDeath()
+    {
+        Destroy(gameObject);
     }
 
 }
